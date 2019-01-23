@@ -1,0 +1,112 @@
+:root {
+    --black: rgb(0, 0, 32);
+    --red: rgb(255, 32, 32);
+    --orange: rgb(255, 192, 128);
+    --white: rgb(252, 255, 248);
+}
+
+html {
+    font-size: calc(70% + 0.4vw);
+}
+
+body {
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+nav {
+    align-items: flex-end;
+    background: var(--orange);
+    display: flex;
+    height: 4rem;
+    justify-content: start;
+    position: fixed;
+    padding-bottom: 0.25rem;
+    padding-left: 4rem;
+    top: 0;
+    width: 100%;
+}
+
+.nav__logo {
+    height: 50%;
+}
+
+.nav__blogs {
+    height: 50%;
+    margin-left: 2rem;
+}
+
+.zipper {
+    background-image: url("../img/zipper_teeth.svg");
+    background-size: contain;
+    background-repeat: repeat-y;
+    width: 5rem;
+}
+
+.zipper__logo {
+    position: fixed;
+    top: 1rem;
+    width: 5rem;
+}
+
+.separate {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+main {
+    flex-grow: 1;
+    margin: 0.3rem auto 0;
+    max-width: 50rem;
+    padding: 5rem 0 2rem;
+    width: 98%;
+}
+
+main section {
+    margin-top: 2vmin;
+}
+
+.eyeCatch {
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.3rem 0.2rem #615f76;
+    display: block;
+    width: 100%;
+}
+
+main section h1 {
+    margin-bottom: 0.8rem;
+}
+
+main section h2 {
+    margin-left: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+main section p {
+    margin-bottom: 0.2rem;
+}
+
+main section ul {
+    margin-left: 3rem;
+}
+
+main section li {
+    margin-bottom: 0.2rem;
+}
+
+footer {
+    background-color: var(--black);
+    height: 8vmin;
+    width: 100%;
+}
