@@ -1,12 +1,18 @@
 :root {
-    --black: rgb(0, 0, 32);
-    --red: rgb(255, 32, 32);
-    --orange: rgb(255, 192, 128);
+    --black: #224;
+    --red: #f84008; /*#ea492d;*/
+    --orange: rgb(255,224,193);
     --white: rgb(252, 255, 248);
+    --blue: rgb(144, 218, 160);
+
+    --logo-size: calc(4.5 * (8px + 0.5vw));
+    --header-size: 3rem;
 }
 
 html {
     font-size: calc(70% + 0.4vw);
+    font-family: "M PLUS Rounded 1c", "Meiryo", sans-serif;
+    color: var(--black);
 }
 
 body {
@@ -15,98 +21,157 @@ body {
     flex-direction: column;
     min-height: 100%;
 }
+header {
+    background: var(--orange);
+    height: var(--header-size);
+    position: fixed;
+    padding-bottom: 0.25rem;
+    top: 0;
+    width: 100%;
+
+    align-items: flex-end;
+    display: flex;
+}
+
+footer {
+    background-color: var(--black);
+    height: 4rem;
+    width: 100%;
+}
+
+nav {
+    padding-left: calc(var(--logo-size) * 0.7); /* ロゴの70% */
+    display: flex;
+    flex-direction: row;
+}
+/*
+nav img {
+    display: inline-block;
+}*/
+
+main {
+    flex-grow: 1;
+    margin: 0.3rem auto 0 0;
+}
+
+section {
+    margin: 0.5rem auto;
+}
+
+ul {
+    margin-left: 1rem;
+}
+
+li {
+    margin-bottom: 0.2rem;
+}
+
+dt {
+    float: left;
+    clear: both;
+    width: 1.5rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+}
+
 
 h1 {
     font-size: 2rem;
+    width: 100%;
+    /* border-bottom: 0.05rem solid var(--black); */
+    margin-bottom: 0.2rem;
+}
+
+h1::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/colon.svg);
+    background-size: contain;
+    vertical-align: sub;
+    height: 2rem;
+    width: 1rem;
 }
 
 h2 {
     font-size: 1.5rem;
+    margin-bottom: 0.4rem;
 }
 
-nav {
-    align-items: flex-end;
-    background: var(--orange);
-    display: flex;
-    height: 4rem;
-    justify-content: start;
-    position: fixed;
-    padding-bottom: 0.25rem;
-    padding-left: 4rem;
-    top: 0;
+h2::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/dot.svg);
+    background-size: contain;
+    vertical-align: sub;
+    height: 1.5rem;
+    width: 0.75rem;
+}
+
+a {
+    color: var(--red);
+}
+
+p {
+    margin-bottom: 0.2rem;
+}
+
+
+.basement {
+    margin: var(--header-size) 0 0;
+}
+
+.eye-catch {
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.3rem 0.2rem #615f76;
+    display: block;
     width: 100%;
+    margin: 1rem 0;
 }
 
-.nav__logo {
-    height: 50%;
+.contents-area {
+    max-width: 960px;
+    width: 96%;
+    margin: 0 auto;
 }
 
-.nav__blogs {
-    height: 50%;
-    margin-left: 2rem;
+.indent {
+    padding-left: 1.5rem;
+}
+
+.nav-item {
+    height: calc(6px + 2.5vw);
+    max-height: 36px;
+}
+
+.nav-spacer {
+    /* min-width: 1px; */
+    /* max-width: 4.5px; */
+    /* width: calc((6px + 2.5vw) * 0.08); */
+    margin: auto 0.8rem auto;
+    /* background-color: var(--black); */
 }
 
 .zipper {
     background-image: url("../img/zipper_teeth.svg");
     background-size: contain;
     background-repeat: repeat-y;
-    width: 5rem;
+    width: var(--logo-size);
+    min-width: var(--logo-size);
+    margin-right: calc(var(--logo-size) * -0.3);
+    min-height: calc(100vh - var(--logo-size) - 4rem);
 }
 
 .zipper__logo {
     position: fixed;
-    top: 1rem;
-    width: 5rem;
+    top: calc(var(--header-size) - 115 * var(--logo-size) / 195);
+    width: var(--logo-size);
+    margin: 0;
 }
 
 .separate {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-}
-
-main {
-    flex-grow: 1;
-    margin: 0.3rem auto 0;
-    max-width: 50rem;
-    padding: 5rem 0 2rem;
-    width: 98%;
-}
-
-main section {
-    margin-top: 2vmin;
-}
-
-.eyeCatch {
-    border-radius: 0.3rem;
-    box-shadow: 0 0 0.3rem 0.2rem #615f76;
-    display: block;
-    width: 100%;
-}
-
-main section h1 {
-    margin-bottom: 0.8rem;
-}
-
-main section h2 {
-    margin-left: 0.6rem;
-    margin-bottom: 0.6rem;
-}
-
-main section p {
-    margin-bottom: 0.2rem;
-}
-
-main section ul {
-    margin-left: 3rem;
-}
-
-main section li {
-    margin-bottom: 0.2rem;
-}
-
-footer {
-    background-color: var(--black);
-    height: 8vmin;
-    width: 100%;
 }

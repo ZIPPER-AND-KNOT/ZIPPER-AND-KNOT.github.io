@@ -28,12 +28,6 @@
     <meta name="twitter:site" content="@Iruyan_ZAK" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
       type="text/css"
       media="screen"
       href="static/css/reset.css"
@@ -44,70 +38,95 @@
       media="screen"
       href="static/css/main.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c"
+      rel="stylesheet"
+    />
     <!-- <script src="main.js"></script> -->
   </head>
   <body id="body">
-    <nav>
-      <img
-        class="nav__logo"
-        src="static/img/zipper_and_knot.svg"
-        alt="ZIPPER AND KNOT"
-      />
-      <img
-        class="nav__blogs"
-        src="static/img/blogs.svg"
-        alt="ZIPPER AND KNOT"
-      />
-    </nav>
-    <div class="separate">
-      <div class="zipper">
-        <a href="#body">
-          <img class="zipper__logo" src="static/img/logo.svg" />
-        </a>
-      </div>
-      <main>
-        <section class="abstruct">
-          <h1>
+    <header>
+      <div class="contents-area">
+        <nav>
+          <a href="/">
             <img
-              class="eyeCatch"
+              class="nav-item"
+              src="static/img/zipper_and_knot.svg"
+              alt="ZIPPER AND KNOT"
+            />
+          </a>
+
+          <img class="nav-item nav-spacer" src="static/img/dia.svg" alt="" />
+
+          <a href="/">
+            <img class="nav-item" src="static/img/blogs.svg" alt="blogs" />
+          </a>
+        </nav>
+      </div>
+    </header>
+    <div class="basement" id="basement">
+      <div class="contents-area">
+        <div class="separate">
+          <div class="zipper">
+            <a href="#body">
+              <img class="zipper__logo" src="static/img/logo.svg" />
+            </a>
+          </div>
+          <main>
+            <section class="abstruct">
+              <img
+              class="eye-catch"
               src="https://pbs.twimg.com/media/DZ26gncVMAI_6y4.jpg"
               alt="闇のコード"
-            />
-          </h1>
-          <p>ZIPPER AND KNOTはお仕事をしないIT屋さんです。</p>
-          <p>楽しそうなお手伝いならやるかもしれません。</p>
-        </section>
-        <section class="contacts">
-          <h1>contacts</h1>
-          <ul>
-            <li><i class="fab fa-twitter"></i> @Iruyan_ZAK</li>
-            <li><i class="fas fa-envelope"></i> yuri.kazuna@gmail.com</li>
-          </ul>
-        </section>
+              />
+              <p>ZIPPER AND KNOTはお仕事をしないIT屋さんです。</p>
+              <p>楽しそうなお手伝いならやるかもしれません。</p>
+            </section>
+            <section class="contacts">
+              <h1>contacts</h1>
+              <dl class="indent">
+                <dt><i class="fab fa-twitter"></i></dt>
+                <dd>
+                  <a href="https://twitter.com/Iruyan_ZAK" target="blank">@Iruyan_ZAK</a>
+                </dd>
+                <dt><i class="far fa-envelope"></i></dt>
+                <dd>yuri.kazuna<span>@</span>gmail.com</dd>
+              </dl>
+            </section>
 
-        <section class="interest">
-          <h1>interest</h1>
-          <ul>
-            <li>Elixer</li>
-            <li>Haskell</li>
-          </ul>
-        </section>
+            <section class="interest">
+              <h1>interest</h1>
+              <ul class="indent">
+                <li>Elixer</li>
+                <li>Haskell</li>
+              </ul>
+            </section>
 
-        <section class="history">
-          <h1>history</h1>
-          <h2>programming</h2>
-          <ul>
-            <li>Python3: Webサービス開発</li>
-            <li>Haskell: Webサービス開発</li>
-            <li>C#: 業務改善GUIアプリケーション開発</li>
-          </ul>
-          <h2>other</h2>
-          <ul>
-            <li>名詞・ロゴデザイン</li>
-            <li>ゲーム制作の補助</li>
-          </ul>
-        </section>
-      </main>
+            <section class="history">
+              <h1>history</h1>
+              <div class="indent">
+                <h2>programming</h2>
+                <ul class="indent">
+                  <li>Python3: Webサービス開発</li>
+                  <li>Haskell: Webサービス開発</li>
+                  <li>C#: 業務改善GUIアプリケーション開発</li>
+                </ul>
+                <h2>other</h2>
+                <ul class="indent">
+                  <li>名刺・ロゴデザイン</li>
+                  <li>ゲーム制作補助</li>
+                </ul>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
     </div>
     <footer></footer>
   </body>

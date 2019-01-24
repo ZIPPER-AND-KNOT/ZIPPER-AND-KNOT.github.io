@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="190.59612"
-   height="65"
-   viewBox="0 0 50.428557 17.197917"
+   width="195"
+   height="60"
+   viewBox="0 0 51.593752 15.875"
    version="1.1"
    id="svg1619"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
@@ -25,18 +25,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="34.914944"
-     inkscape:cy="-6.5336805"
+     inkscape:zoom="3.959798"
+     inkscape:cx="37.576656"
+     inkscape:cy="40.341906"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1031"
+     inkscape:window-width="1600"
+     inkscape:window-height="851"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="1"
@@ -48,12 +48,21 @@
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-midpoints="true"
      units="px"
-     inkscape:snap-page="true">
+     inkscape:snap-page="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     showguides="true"
+     inkscape:guide-bbox="true">
     <inkscape:grid
        type="xygrid"
        id="grid2227"
        originx="-23.812496"
        originy="-10.583338" />
+    <sodipodi:guide
+       position="14.552088,25.135413"
+       orientation="1,0"
+       id="guide1783"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata1616">
@@ -63,7 +72,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -71,22 +80,22 @@
      inkscape:label="レイヤー 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-22.962053,-119.0677)">
+     transform="translate(-22.962053,-120.39062)">
     <rect
-       style="fill:#000020;fill-opacity:1;stroke:#000020;stroke-width:0.63999999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#222244;fill-opacity:1;stroke:#ffffff;stroke-width:0.63499999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect2389"
        width="10.159999"
        height="6.3499985"
-       x="35.940388"
-       y="119.86133"
-       ry="0.1" />
+       x="35.609142"
+       y="121.18437"
+       ry="0.63499999" />
     <rect
-       style="fill:#000020;fill-opacity:1;stroke:#000020;stroke-width:0.63999999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#222244;fill-opacity:1;stroke:#ffffff;stroke-width:0.63499999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect2389-8"
        width="10.16"
        height="6.3499985"
-       x="28.423695"
-       y="128.32812"
-       ry="0.1" />
+       x="29.25914"
+       y="129.12187"
+       ry="0.63499999" />
   </g>
 </svg>
