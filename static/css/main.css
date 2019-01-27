@@ -7,6 +7,7 @@
 
     --logo-size: calc(4.5 * (8px + 0.5vw));
     --header-size: 3rem;
+    --footer-size: 5rem;
 }
 
 html {
@@ -15,9 +16,9 @@ html {
     color: var(--black);
 }
 
-@media (min-width:800px) {
+@media (min-width:640px) {
     html {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -42,11 +43,12 @@ header {
 
 footer {
     background-color: var(--black);
-    height: 4rem;
+    height: var(--footer-size);
     width: 100%;
 }
 
 main {
+    max-width: 560px;
     flex-grow: 1;
     margin: 0.3rem 0 0 auto;
 }
@@ -109,7 +111,7 @@ a {
 }
 
 .contents-area {
-    max-width: 800px;
+    max-width: 640px;
     width: 90%;
     margin: 0 auto;
 }
@@ -121,6 +123,10 @@ a {
 
 .footer-a {
     color: var(--white);
+}
+
+.footer-p {
+    margin: 0.5rem 0;
 }
 
 .indent {
@@ -148,7 +154,7 @@ a {
     width: var(--logo-size);
     min-width: var(--logo-size);
     margin-right: calc(var(--logo-size) * 0.3);
-    min-height: calc(100vh - var(--logo-size) - 4rem);
+    min-height: calc(100vh - var(--logo-size) - var(--fotter-size));
 }
 
 .zipper__logo {
@@ -188,11 +194,11 @@ a {
 }
 
 .blog-main {
-    max-width: 720px;
+    max-width: 560px;
 }
 
 .blog-p {
-    line-height: 160%;
+    line-height: 150%;
 }
 
 .blog-p:first-child::before {
